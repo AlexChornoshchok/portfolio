@@ -474,9 +474,15 @@ a {
             display: flex;
             justify-content: space-between;
 
+            @media screen and (max-width: $mobile){
+                flex-wrap: wrap;
+            }
+    
+
             &-we {
                 display: flex;
                 flex-direction: column;
+                width: 49%;
 
                 @media screen and (max-width: $mobile){ 
                     width: 49%;
